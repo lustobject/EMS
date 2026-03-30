@@ -11,7 +11,7 @@ originalalldata <- read.csv(files[1])[0,]
 for (file in files) {
   data <- read.csv(file)
   data <- subset(data, key_resp_5.keys == "space")
-  data <- subset(data, key_resp.duration == "None")
+  data <- subset(data, key_resp_5.duration == "None")
   originalalldata <- rbind(originalalldata, data)
 }
 
